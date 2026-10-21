@@ -1,0 +1,44 @@
+[
+  {
+    "id": "refund-policy",
+    "expected_label": "policy",
+    "required_terms": [
+      "refund",
+      "30 days"
+    ],
+    "output": "{\"label\":\"policy\",\"answer\":\"You can request a refund within 30 days.\"}"
+  },
+  {
+    "id": "password-help",
+    "expected_label": "support",
+    "required_terms": [
+      "password",
+      "reset"
+    ],
+    "output": "{\"label\":\"support\",\"answer\":\"Use the password reset page to regain access.\"}"
+  },
+  {
+    "id": "shipping-status",
+    "expected_label": "support",
+    "required_terms": [
+      "tracking"
+    ],
+    "output": "{\"label\":\"support\",\"answer\":\"Check your tracking link for the latest shipment status.\"}"
+  },
+  {
+    "id": "wrong-label-regression",
+    "expected_label": "policy",
+    "required_terms": [
+      "refund"
+    ],
+    "output": "{\"label\":\"policy\",\"answer\":\"The refund process starts in account settings.\"}"
+  },
+  {
+    "id": "malformed-output",
+    "expected_label": "support",
+    "required_terms": [
+      "help"
+    ],
+    "output": "{\"label\":\"support\",\"answer\":\"Contact support for help.\"}"
+  }
+]
